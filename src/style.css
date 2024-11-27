@@ -1,0 +1,83 @@
+/* src/style.css */
+* {
+  box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+}
+
+body {
+  background: url('./images/wave.svg') no-repeat center center fixed; /* Adjusted path */
+  background-size: cover; /* Cover the entire background */
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  padding: 10px; /* Add some padding */
+  background-color: rgba(30, 30, 30, 0.8); /* Semi-transparent dark background for header */
+}
+
+.auth-button {
+  display: block; /* Make button a block element */
+  width: 100%; /* Full width for button */
+  padding: 10px; /* Padding for button */
+  margin: 10px 0; /* Margin above and below button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size for button */
+}
+
+.auth-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.auth-form {
+  padding: 20px; /* Padding for form */
+  border: 1px solid #444; /* Darker border for form */
+  border-radius: 4px; /* Rounded corners for form */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Light shadow for form */
+  margin-top: 20px; /* Margin above form */
+  background-color: #ccc; /* Semi-transparent dark background for form */
+}
+
+.auth-input {
+  display: block; /* Make inputs block elements */
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding for inputs */
+  margin: 10px 0; /* Margin above and below inputs */
+  border: 1px solid #ccc; /* Lighter grey border for inputs */
+  border-radius: 4px; /* Rounded corners for inputs */
+  background-color: #f0f0f0; /* Light grey background for inputs */
+  color: #333; /* Dark text color for better contrast */
+}
+
+.auth-input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.login-container {
+  max-width: 400px; /* Set a max width for the login form */
+  margin: 0 auto; /* Center the form */
+  padding: 20px; /* Padding around the form */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f0f0f0; /* Light grey background color */
+  box-shadow: 0 2px 10px #ccc; /* Light shadow for form */
+}
+
+.login-header {
+  text-align: center; /* Center the header text */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.login-title {
+  font-size: 24px; /* Title font size */
+  margin: 0; /* Remove margin */
+}
+
+.error-message {
+  color: #e74c3c; /* Red color for error messages */
+  margin: 10px 0; /* Margin above and below */
+  text-align: center; /* Center error messages */
+}

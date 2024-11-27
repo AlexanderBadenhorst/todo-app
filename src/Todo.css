@@ -1,0 +1,105 @@
+/* Todo.css */
+body {
+    background-color: #dcdcdc; /* Lighter grey background for the page */
+}
+
+/* Todo.css */
+.todo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f0f0f0; /* Change to match login container */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-header {
+    background-color: #007bff; /* Header background color */
+    color: white; /* Header text color */
+    padding: 15px; /* Padding around the header */
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top */
+    text-align: center; /* Center the text */
+}
+
+.todo-title {
+    font-size: 28px; /* Title font size */
+    margin: 0; /* Remove margin */
+}
+
+.todo-list {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+    color: black; /* Set the color of the text */
+}
+
+.todo-item {
+    display: block; /* Keep it as a block element */
+    margin: 10px 0; /* Margin between items */
+    padding: 10px; /* Padding for item */
+    border-bottom: 1px solid #ddd;
+}
+
+.todo-item-content {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.todo-item-content span {
+    margin-left: 8px; /* Space between checkbox and text */
+    text-align: left; /* Align text to the left */
+    flex-grow: 1; /* Allow the text to take up available space */
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px; /* Add some space between input and button */
+}
+
+.add-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #0056b3;
+}
+
+/* New styles for edit button */
+.edit-button {
+    background-color: #f39c12; /* Orange background for edit button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space between buttons */
+}
+
+.edit-button:hover {
+    background-color: #e67e22; /* Darker orange on hover */
+}
+
+.delete-button {
+    background-color: #e74c3c; /* Red background for delete button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-left: 10px; /* Space between buttons */
+}
+
+.delete-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}

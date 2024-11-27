@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/* App.css */
+.app-container {
+  position: relative; /* Allow absolute positioning of child elements */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logout-button-container {
+  position: absolute; /* Position the container absolutely */
+  top: 20px; /* Distance from the top */
+  right: 20px; /* Distance from the right */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logout-button {
+  background-color: #ff4757; /* Red background color for the button */
+  color: white; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.logout-button:hover {
+  background-color: #e84118; /* Darker red on hover */
 }
 
-.App-link {
-  color: #61dafb;
+/* Existing styles */
+.app-title {
+  text-align: center; /* Center the title */
+  font-size: 36px; /* Increase font size */
+  color: #007bff; /* Set a color for the title */
+  margin-bottom: 20px; /* Add space below the title */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcome-message {
+  text-align: center; /* Center the welcome message */
+  font-size: 18px; /* Set font size for the welcome message */
+  color: #555; /* Set a softer color for the welcome message */
+  margin-bottom: 20px; /* Add space below the welcome message */
 }
